@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site inicial</title>
     <style>
-        body{
-            background-color: rgb(154, 154, 214);
-            font: 18pt;
-        }
-        div#id{
-            font: 25pt;
-        }
-                   
-
+      body {
+        background-color: rgb(154, 154, 214);
+        font: 18pt;
+      }
+      div#id {
+        font: 25pt;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Calculando a Media de notas de Aluno</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Media" onclick="clicar()">
+    <input type="number" name="txtn1" id="txtn1" /> +
+    <input type="number" name="txtn2" id="txtn2" />
+    <input type="button" value="Media" onclick="clicar()" />
     <div id="res">Resultado</div>
     <script>
-        function clicar(){
-
-        }
+      function clicar() {
+        var tn1 = window.document.getElementById("txtn1");
+        var tn2 = window.document.querySelector("input#txtn2");
+        var res = window.document.getElementById("res");
+        var n1 = Number(tn1.value);
+        var n2 = Number(tn2.value);
+        var media = (n1 + n2) / 2;
+        res.innerHTML = `media;
+      }
     </script>
-    
-</body>
+  </body>
 </html>
