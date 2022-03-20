@@ -30,8 +30,8 @@
     <input type="number" name="txtn2" id="txtn2" />
     <input type="button" value="Media" onclick="resulMedia()" />
     <div id="res">Resultado</div>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja!!!</div>
-    <script>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja!!!</div><!--Div da caixa interativa-->
+    <script>// funcion que calcula a media de dos notas
       function resulMedia() {
         var tn1 = window.document.getElementById("txtn1")
         var tn2 = window.document.querySelector("input#txtn2")
@@ -40,7 +40,7 @@
         var n2 = Number(tn2.value)
         var media = (n1 + n2) / 2
         res.innerHTML = media
-      }
+      }// tres funciones que realzian eventos...
       var cuadrado = window.document.getElementById('area')
       function clicar(){
         cuadrado.innerText = 'Clicou'
